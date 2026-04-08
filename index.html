@@ -1,18 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To-Do List</title>
+    <title>Deutschlands große Geschichte</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>To-Do List</h1>
-        <input type="text" id="taskInput" placeholder="Enter a new task">
-        <button id="addTaskBtn">Add Task</button>
-        <ul id="taskList"></ul>
-    </div>
+    <header class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-top">
+                <nav class="language-switcher" aria-label="Sprache wählen">
+                    <button class="lang-btn active" data-lang="de">DE</button>
+                    <button class="lang-btn" data-lang="ar">AR</button>
+                    <button class="lang-btn" data-lang="en">EN</button>
+                </nav>
+                <a class="github-link" href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+            <p class="eyebrow" data-i18n="eyebrow">Historisches Portfolio</p>
+            <h1 data-i18n="heading">Deutschland: Geschichte, Kultur und Erfolge</h1>
+            <p data-i18n="subheading">Entdecke wichtige Stationen der deutschen Geschichte in einem eleganten Design, das zur deutschen Gesellschaft passt.</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="intro-card">
+            <h2 data-i18n="introTitle">Warum Deutschland?</h2>
+            <p data-i18n="introText">Deutschland besitzt ein reiches historisches Erbe und einen starken kulturellen und wirtschaftlichen Einfluss in Europa und weltweit. Diese Seite präsentiert die wichtigsten Punkte in modernem Stil.</p>
+        </section>
+
+        <section class="timeline">
+            <h2 data-i18n="timelineTitle">Wichtige historische Meilensteine</h2>
+            <div class="timeline-grid">
+                <article>
+                    <h3>1806</h3>
+                    <p data-i18n="milestone1">Ende des Heiligen Römischen Reiches und Beginn einer neuen Epoche deutscher Staatenbildung.</p>
+                </article>
+                <article>
+                    <h3>1871</h3>
+                    <p data-i18n="milestone2">Gründung des Deutschen Kaiserreichs, Beginn einer starken industriellen und kulturellen Phase.</p>
+                </article>
+                <article>
+                    <h3>1949</h3>
+                    <p data-i18n="milestone3">Gründung der Bundesrepublik Deutschland und der DDR, später Wiedervereinigung 1990.</p>
+                </article>
+                <article>
+                    <h3 data-i18n="todayTitle">Heute</h3>
+                    <p data-i18n="milestone4">Deutschland bleibt ein führendes Land in Technologie, Kultur und demokratischer Entwicklung in Europa.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="values">
+            <div>
+                <h2 data-i18n="valuesTitle">Deutsche Werte</h2>
+                <p data-i18n="valuesText">Systematik, Rechtsstaatlichkeit, Innovation und kulturelle Vielfalt sind zentrale Werte, die den deutschen Geist widerspiegeln.</p>
+            </div>
+            <div class="value-list">
+                <div class="value-item">
+                    <h3 data-i18n="value1Title">Professionalität</h3>
+                    <p data-i18n="value1Text">Organisiertes Arbeiten und Qualitätsbewusstsein in allen Bereichen.</p>
+                </div>
+                <div class="value-item">
+                    <h3 data-i18n="value2Title">Nachhaltigkeit</h3>
+                    <p data-i18n="value2Text">Umweltbewusstsein und Entwicklung langfristiger Lösungen.</p>
+                </div>
+                <div class="value-item">
+                    <h3 data-i18n="value3Title">Vielfalt</h3>
+                    <p data-i18n="value3Text">Zusammenleben verschiedener Kulturen und Respekt vor Traditionen.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="callout">
+            <h2 data-i18n="calloutTitle">Kurzüberblick</h2>
+            <p data-i18n="calloutText">Diese Website wurde so gestaltet, dass sie eine attraktive, benutzerfreundliche Präsentation bietet, die sowohl den professionellen als auch den kulturellen Stil berücksichtigt.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p data-i18n="footerText">© 2026 | Portfolio zur großen Geschichte Deutschlands</p>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
